@@ -3,19 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNG.Alert"/>
-      <class name="testNG.Popup"/>
+     
+   
+      <class name="testNG.Amazon_Multi_Function"/>
+      <class name="testNG.priority"/>
+      <class name="testNG.FB_Register"/>
+      <
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-	

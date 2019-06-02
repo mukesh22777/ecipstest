@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+	<test name="Results">
+		<classes>
+			<class name="testNG.FB_Register"></class>  
+			<class name="testNG.Amazon_Multi_Function"></class>
+			<class name="testNG.Popup"></class> 
+			<class name="AdvancedWebdriver.Screenshot"></class>
+			<class name="AdvancedWebdriver.PageScroll"></class>
+			<class name="AdvancedWebdriver.Mouseover"></class>
+			<class name="AdvancedWebdriver.AjaxControl"></class>
+			<class name="AdvancedWebdriver.Screenshot"></class>
+			<class name="ddfw.Inputstream"></class>
+			<class name="ddfw.OutputStream"></class>	
+			<class name="junit.junit_FB_Registation1"></class>
+
+
+
+
+		</classes>
+	</test>
+</suite>

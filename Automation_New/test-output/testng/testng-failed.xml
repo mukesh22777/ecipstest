@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testng]">
+  <test thread-count="5" name="TestA(failed)">
+    <classes>
+      <class name="testNG.Alert">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="alert"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testNG.Alert -->
+      <class name="testNG.Amazon_Multi_Function">
+        <methods>
+          <include name="f"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testNG.Amazon_Multi_Function -->
+      <class name="testNG.Comwebdemo">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="method2"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testNG.Comwebdemo -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+</suite> <!-- Failed suite [testng] -->

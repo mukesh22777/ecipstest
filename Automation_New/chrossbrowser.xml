@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="firefoxtestsuite">
+		<parameter name="Browser" value="firefox" />
+		<classes>
+		<class name="crossbrowser.VarifyTitle" />
+		</classes>
+		
+	</test>
+	<test name="chrometestsuite">
+	<parameter name="Browser" value="chrome" />
+		<classes>
+		<class name="crossbrowser.VarifyTitle" />
+		</classes>
+	</test>
+	
+	<test name="ietestsuite">
+		<parameter name="Browser" value="IE" />
+		<classes>
+		<class name="crossbrowser.VarifyTitle" />
+		</classes>
+		
+	</test>
+	
+	
+	
+</suite> <!-- Suite -->

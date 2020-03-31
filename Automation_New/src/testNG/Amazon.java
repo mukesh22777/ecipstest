@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,14 +20,13 @@ public class Amazon {
 
 	@Test
 	  public void f() throws IOException {
-		//click on hello sign button
 		
-		driver.findElement(By.id("nav-link-accountList")).click();
-		driver.findElement(By.id("ap_email")).sendKeys("mmpatel_64804@yahoo.com");
-		driver.findElement(By.id("continue")).click();
-		driver.findElement(By.id("ap_password")).sendKeys("riyasavan123");
-		driver.findElement(By.id("signInSubmit")).click();
-		//test
+		//varify the page title 
+		driver.manage().window().maximize();
+		driver.get("http://www.amazon.com");
+		System.out.println(driver.getTitle());
+		
+		
 		DateFormat date = new SimpleDateFormat("MM dd YYYY HH mm ss");
 		  Date d1 = new Date();
 		  String time = date.format(d1);
@@ -37,10 +35,10 @@ public class Amazon {
 		  File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		  
 		  
-		  FileUtils.copyFile(src, new File("F:\\Selenium\\Screenshort\\screenshot1.png"));
+		  FileUtils.copyFile(src, new File("C:\\Users\\MUKESH\\Desktop\\Image_Testing\\screenshot1.png"));
 		  
 		  File src1 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(src1, new File("F:\\Workspace\\Mukesh_Automation\\screenshot @ " + time + ".png"));
+		  FileUtils.copyFile(src1, new File("C:\\Users\\MUKESH\\Desktop\\Image_TestingImage_101 " + time + ".png"));
 	  }
 	  @BeforeClass
 	  public void beforeClass() {

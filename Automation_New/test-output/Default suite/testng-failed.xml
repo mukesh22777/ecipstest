@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
-    <classes>
-      <class name="testNG.Amazon"/>
-    </classes>
-  </test> <!-- Default test -->
+  <parameter name="Browser" value="not-found"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="testNG.Amazon">
+      <class name="crossbrowser.VarifyTitle">
         <methods>
-          <include name="beforeClass"/>
-          <include name="f"/>
+          <include name="verifypageTitle" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.Amazon -->
+      </class> <!-- crossbrowser.VarifyTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

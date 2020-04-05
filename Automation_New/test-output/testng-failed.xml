@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="Browser" value="not-found"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="crossbrowser.VarifyTitle">
+      <class name="keybord_event.keyboed_evwnt_sample_form">
         <methods>
-          <include name="verifypageTitle" invocation-numbers="0"/>
+          <include name="Keybord_Action"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- crossbrowser.VarifyTitle -->
+      </class> <!-- keybord_event.keyboed_evwnt_sample_form -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

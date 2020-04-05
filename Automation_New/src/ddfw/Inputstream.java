@@ -20,7 +20,7 @@ public class Inputstream {
 	WebDriver driver;
 	
   @Test
-  public void f() throws IOException, JXLException {
+  public void inputdata_from_exlel() throws IOException, JXLException {
 	  
 	  FileInputStream fi = new FileInputStream("H:\\New folder\\workspace\\Automation Training\\TestData.xls");
 	  Workbook wb = Workbook.getWorkbook(fi);
@@ -46,13 +46,14 @@ public class Inputstream {
   @BeforeTest
   public void beforeTest() {
 	  
-	  System.setProperty("webdriver.gecko.driver", "H:\\New folder\\driver\\geckodriver.exe");
+	  System.setProperty("webdriver.gecko.driver", "F:\\Selenium\\Lib\\Drivers\\geckodriver.exe");
 	  driver = new FirefoxDriver();
 	  driver.get("https://www.fb.com/");
   }
 
   @AfterTest
   public void afterTest() {
+	  driver.quit();
   }
 
 }

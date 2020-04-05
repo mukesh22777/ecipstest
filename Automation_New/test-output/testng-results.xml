@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35735" started-at="2019-09-16T14:17:46Z" finished-at="2019-09-16T14:18:22Z">
+  <suite name="Default suite" duration-ms="36054" started-at="2020-04-05T21:52:01Z" finished-at="2020-04-05T21:52:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35735" started-at="2019-09-16T14:17:46Z" finished-at="2019-09-16T14:18:22Z">
-      <class name="testNG.Amazon">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testNG.Amazon@3f3afe78]" name="beforeClass" is-config="true" duration-ms="15977" started-at="2019-09-16T10:17:46Z" finished-at="2019-09-16T10:18:02Z">
+    <test name="Default test" duration-ms="36054" started-at="2020-04-05T21:52:01Z" finished-at="2020-04-05T21:52:37Z">
+      <class name="keybord_event.keyboed_evwnt_sample_form">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="beforeClass" is-config="true" duration-ms="15046" started-at="2020-04-05T17:52:01Z" finished-at="2020-04-05T17:52:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="f()[pri:0, instance:testNG.Amazon@3f3afe78]" name="f" duration-ms="7961" started-at="2019-09-16T10:18:02Z" finished-at="2019-09-16T10:18:10Z">
+        <test-method status="PASS" signature="Keybord_Action()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="Keybord_Action" duration-ms="14342" started-at="2020-04-05T17:52:16Z" finished-at="2020-04-05T17:52:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testNG.Amazon@3f3afe78]" name="afterClass" is-config="true" duration-ms="11764" started-at="2019-09-16T10:18:10Z" finished-at="2019-09-16T10:18:22Z">
+        </test-method> <!-- Keybord_Action -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="afterClass" is-config="true" duration-ms="6635" started-at="2020-04-05T17:52:30Z" finished-at="2020-04-05T17:52:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testNG.Amazon -->
+      </class> <!-- keybord_event.keyboed_evwnt_sample_form -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

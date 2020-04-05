@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
-public class OutputStream {
+public class inputOutput {
 	
 	WebDriver driver;
 	public String str;
@@ -26,11 +26,11 @@ public class OutputStream {
   @Test
   public void outputstream() throws IOException, JXLException  {
 	  
-	  FileInputStream fi = new FileInputStream("H:\\New folder\\workspace\\Automation Training\\TestData.xls");
+	  FileInputStream fi = new FileInputStream("H:\\New folder\\workspace\\Automation Training\\Test\\Test_Data1.xls");
 	  Workbook w = Workbook.getWorkbook(fi);
 	  Sheet s = w.getSheet("Sheet1");
 	  
-	  FileOutputStream fo = new FileOutputStream("H:\\New folder\\workspace\\Automation Training\\Output.xls");
+	  FileOutputStream fo = new FileOutputStream("H:\\New folder\\workspace\\Automation Training\\Test\\output.xls");
 	  WritableWorkbook wb = Workbook.createWorkbook(fo);
 	  WritableSheet ws = wb.createSheet("Results", 0);
 	  

@@ -2,30 +2,20 @@ package multifunction;
 
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Dropdown {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver","H:\\New folder\\driver\\chrome\\chromedriver.exe");
-	    ChromeDriver driver = new ChromeDriver();
-	    driver.manage().window().maximize();
-	    Thread.sleep(2000);
-	    //Selecting a single value in a dropdown
-	    /*driver.get("http://demo.guru99.com/test/newtours/register.php");
-	    Thread.sleep(5000);
-		WebElement mySelectElement = driver.findElement(By.name("country"));
-	    Select dropdown= new Select(mySelectElement);
-	    dropdown.selectByVisibleText("ANTARCTICA");
-	    dropdown.selectByValue("ANTARCTICA");
-	    dropdown.selectByIndex(6);
-	    //System.out.println("Selected country is displayed");
-	    //driver.close();*/
-
-		//Selecting Items in a Multiple SELECT elements
+		System.setProperty("webdriver.gecko.driver", "F:\\Selenium\\Lib\\Drivers\\geckodriver.exe");
 	    
+		FirefoxDriver driver = new FirefoxDriver();
+		
+	    driver.manage().window().maximize();
+	    Thread.sleep(5000);
 	    
 		driver.get("http://jsbin.com/osebed/2");
 		Thread.sleep(2000);

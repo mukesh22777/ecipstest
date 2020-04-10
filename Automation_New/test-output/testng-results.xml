@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36054" started-at="2020-04-05T21:52:01Z" finished-at="2020-04-05T21:52:37Z">
+  <suite name="Default suite" duration-ms="28430" started-at="2020-04-10T19:35:14Z" finished-at="2020-04-10T19:35:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36054" started-at="2020-04-05T21:52:01Z" finished-at="2020-04-05T21:52:37Z">
-      <class name="keybord_event.keyboed_evwnt_sample_form">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="beforeClass" is-config="true" duration-ms="15046" started-at="2020-04-05T17:52:01Z" finished-at="2020-04-05T17:52:16Z">
+    <test name="Default test" duration-ms="28430" started-at="2020-04-10T19:35:14Z" finished-at="2020-04-10T19:35:43Z">
+      <class name="slider.Slider">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:slider.Slider@511baa65]" name="beforeMethod" is-config="true" duration-ms="14727" started-at="2020-04-10T15:35:14Z" finished-at="2020-04-10T15:35:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Keybord_Action()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="Keybord_Action" duration-ms="14342" started-at="2020-04-05T17:52:16Z" finished-at="2020-04-05T17:52:30Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="slider()[pri:0, instance:slider.Slider@511baa65]" name="slider" duration-ms="6296" started-at="2020-04-10T15:35:29Z" finished-at="2020-04-10T15:35:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Keybord_Action -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:keybord_event.keyboed_evwnt_sample_form@36d64342]" name="afterClass" is-config="true" duration-ms="6635" started-at="2020-04-05T17:52:30Z" finished-at="2020-04-05T17:52:37Z">
+        </test-method> <!-- slider -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:slider.Slider@511baa65]" name="afterMethod" is-config="true" duration-ms="7392" started-at="2020-04-10T15:35:35Z" finished-at="2020-04-10T15:35:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- keybord_event.keyboed_evwnt_sample_form -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- slider.Slider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

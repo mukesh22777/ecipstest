@@ -27,7 +27,8 @@ public class selectable {
 		//Select the "Iteam2" From the List		
 		driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[2]")).click();
 		//Select the "Iteam5" From the List		
-				driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[5]")).click();	
+				driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[5]")).click();
+				
 		Thread.sleep(3000);
 	  }
 	  

@@ -1,0 +1,50 @@
+
+Facebook - Log In or Sign Up
+ this is a Beforesuite
+ --------------------------------------------------
+
+Yahoo
+ this is a Beforetest
+-----------------------------------------------------
+Google
+ this is a Beforeclass
+-------------------------------------------------------
+ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation
+ this is a BeforeMethod
+---------------------------------------------------------------
+ this is a my real test1
+ this is a AfterMethod
+--------------------------------------------------------
+
+ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation
+ this is a BeforeMethod
+-----------------------------------------------------------
+ this is a my real test2
+ this is a AfterMethod
+------------------------------------------------------
+
+ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation
+ this is a BeforeMethod
+-------------------------------------------------------------------------------------
+ this is a my real test3
+ this is a AfterMethod
+-----------------------------------------------------------------------------------------------------------------------------------
+
+ this is a AfterClass
+ this is a AfterTest
+PASSED: f1
+PASSED: f2
+PASSED: f3
+
+===============================================
+    Default test
+    Tests run: 3, Failures: 0, Skips: 0
+===============================================
+
+ this is a AfterSuite
+
+===============================================
+Default suite
+Total tests run: 3, Failures: 0, Skips: 0
+===============================================
+

@@ -1,5 +1,4 @@
 package checkboxradio;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,7 +10,7 @@ public class checkbox_radio {
 	WebDriver driver;
 	  @Test
 	  public void checkbox() throws InterruptedException {
-		  //select the location 
+		//select the location 
 		  driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/fieldset[1]/label[1]")).click();
 		//select the hotel reating
 		  driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/fieldset[2]/label[4]")).click();

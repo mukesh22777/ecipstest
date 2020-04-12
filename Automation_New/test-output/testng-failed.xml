@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="element_in_dispaly_or_not.element_dispalyed_selected_enabled">
+      <class name="practiceSwitchWindows.Switch_Windows">
         <methods>
-          <include name="element_Visibilty"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="switch_windows_newbrowser_window"/>
+          <include name="New_Browsertab"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- element_in_dispaly_or_not.element_dispalyed_selected_enabled -->
+      </class> <!-- practiceSwitchWindows.Switch_Windows -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

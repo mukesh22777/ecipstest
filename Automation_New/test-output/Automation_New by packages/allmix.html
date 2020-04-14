@@ -1,0 +1,981 @@
+<html>
+<head>
+<title>TestNG:  allmix</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>allmix</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/57</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 12 16:05:09 EDT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (561 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: H:\New folder\driver\chrome\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at allmix.Comwebdemo.beforeTest(Comwebdemo.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:645)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace914507705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914507705'><pre>java.lang.IllegalStateException: The driver executable does not exist: H:\New folder\driver\chrome\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at allmix.Comwebdemo.beforeTest(Comwebdemo.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:645)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.setupDriver()'><b>setupDriver</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.beforeTest()'><b>beforeTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Amazon.beforeClass()'><b>beforeClass</b><br>Test class: allmix.Amazon</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon@59e84876</td></tr>
+<tr>
+<td title='allmix.anotaton.beforeClass()'><b>beforeClass</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.multi_Window_handle.beforeClass()'><b>beforeClass</b><br>Test class: allmix.multi_Window_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.multi_Window_handle@5dfcfece</td></tr>
+<tr>
+<td title='allmix.selectable.beforeClass()'><b>beforeClass</b><br>Test class: allmix.selectable</td>
+<td></td>
+<td>0</td>
+<td>allmix.selectable@36d4b5c</td></tr>
+<tr>
+<td title='allmix.Amazon_Multi_Function.beforeClass()'><b>beforeClass</b><br>Test class: allmix.Amazon_Multi_Function</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon_Multi_Function@5afa04c</td></tr>
+<tr>
+<td title='allmix.automation_practiceform.beforeClass()'><b>beforeClass</b><br>Test class: allmix.automation_practiceform</td>
+<td></td>
+<td>0</td>
+<td>allmix.automation_practiceform@7921b0a2</td></tr>
+<tr>
+<td title='allmix.ifram_handle.beforeClass()'><b>beforeClass</b><br>Test class: allmix.ifram_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.ifram_handle@6d78f375</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.beforeClass()'><b>beforeClass</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.beforeClass()'><b>beforeClass</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.annotation$NewTest.beforeClass()'><b>beforeClass</b><br>Test class: allmix.annotation$NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.annotation$NewTest@6ea12c19</td></tr>
+<tr>
+<td title='allmix.element_dispalyed_selected_enabled.beforeClass()'><b>beforeClass</b><br>Test class: allmix.element_dispalyed_selected_enabled</td>
+<td></td>
+<td>0</td>
+<td>allmix.element_dispalyed_selected_enabled@5ae9a829</td></tr>
+<tr>
+<td title='allmix.Popup.beforeClass()'><b>beforeClass</b><br>Test class: allmix.Popup</td>
+<td></td>
+<td>0</td>
+<td>allmix.Popup@100fc185</td></tr>
+<tr>
+<td title='allmix.spinner.beforeClass()'><b>beforeClass</b><br>Test class: allmix.spinner</td>
+<td></td>
+<td>0</td>
+<td>allmix.spinner@5034c75a</td></tr>
+<tr>
+<td title='allmix.FB_Register.beforeClass()'><b>beforeClass</b><br>Test class: allmix.FB_Register</td>
+<td></td>
+<td>0</td>
+<td>allmix.FB_Register@548b7f67</td></tr>
+<tr>
+<td title='allmix.keyboed_evwnt_sample_form.beforeClass()'><b>beforeClass</b><br>Test class: allmix.keyboed_evwnt_sample_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.keyboed_evwnt_sample_form@32d992b2</td></tr>
+<tr>
+<td title='allmix.pre1.beforeClass()'><b>beforeClass</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.manage_tab.beforeClass()'><b>beforeClass</b><br>Test class: allmix.manage_tab</td>
+<td></td>
+<td>0</td>
+<td>allmix.manage_tab@215be6bb</td></tr>
+<tr>
+<td title='allmix.anotaton.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.anotaton.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.checkbox_radio.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.checkbox_radio</td>
+<td></td>
+<td>0</td>
+<td>allmix.checkbox_radio@174d20a</td></tr>
+<tr>
+<td title='allmix.dropdown_list.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.dropdown_list</td>
+<td></td>
+<td>0</td>
+<td>allmix.dropdown_list@402f32ff</td></tr>
+<tr>
+<td title='allmix.html_contect_form.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.html_contect_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.html_contect_form@7ac7a4e4</td></tr>
+<tr>
+<td title='allmix.NewTest.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.NewTest@56f4468b</td></tr>
+<tr>
+<td title='allmix.uploadtestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.uploadtestNG</td>
+<td></td>
+<td>0</td>
+<td>allmix.uploadtestNG@9629756</td></tr>
+<tr>
+<td title='allmix.date_picker.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.date_picker</td>
+<td></td>
+<td>0</td>
+<td>allmix.date_picker@3c756e4d</td></tr>
+<tr>
+<td title='allmix.Slider.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.Slider</td>
+<td></td>
+<td>0</td>
+<td>allmix.Slider@6d00a15d</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.annotation$NewTest.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.annotation$NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.annotation$NewTest@6ea12c19</td></tr>
+<tr>
+<td title='allmix.control_group.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.control_group</td>
+<td></td>
+<td>0</td>
+<td>allmix.control_group@6a2bcfcb</td></tr>
+<tr>
+<td title='allmix.dilog_box.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.dilog_box</td>
+<td></td>
+<td>0</td>
+<td>allmix.dilog_box@7c0e2abd</td></tr>
+<tr>
+<td title='allmix.pagesource.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.pagesource</td>
+<td></td>
+<td>0</td>
+<td>allmix.pagesource@3a82f6ef</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.pre1.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.pre1.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.pre1.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.manu_submanu.beforeMethod()'><b>beforeMethod</b><br>Test class: allmix.manu_submanu</td>
+<td></td>
+<td>0</td>
+<td>allmix.manu_submanu@4439f31e</td></tr>
+<tr>
+<td title='allmix.anotaton.afterMethod()'><b>afterMethod</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.anotaton.afterMethod()'><b>afterMethod</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.checkbox_radio.afterMethod()'><b>afterMethod</b><br>Test class: allmix.checkbox_radio</td>
+<td></td>
+<td>0</td>
+<td>allmix.checkbox_radio@174d20a</td></tr>
+<tr>
+<td title='allmix.dropdown_list.afterMethod()'><b>afterMethod</b><br>Test class: allmix.dropdown_list</td>
+<td></td>
+<td>0</td>
+<td>allmix.dropdown_list@402f32ff</td></tr>
+<tr>
+<td title='allmix.html_contect_form.afterMethod()'><b>afterMethod</b><br>Test class: allmix.html_contect_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.html_contect_form@7ac7a4e4</td></tr>
+<tr>
+<td title='allmix.NewTest.afterMethod()'><b>afterMethod</b><br>Test class: allmix.NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.NewTest@56f4468b</td></tr>
+<tr>
+<td title='allmix.uploadtestNG.afterMethod()'><b>afterMethod</b><br>Test class: allmix.uploadtestNG</td>
+<td></td>
+<td>0</td>
+<td>allmix.uploadtestNG@9629756</td></tr>
+<tr>
+<td title='allmix.date_picker.afterMethod()'><b>afterMethod</b><br>Test class: allmix.date_picker</td>
+<td></td>
+<td>0</td>
+<td>allmix.date_picker@3c756e4d</td></tr>
+<tr>
+<td title='allmix.Slider.afterMethod()'><b>afterMethod</b><br>Test class: allmix.Slider</td>
+<td></td>
+<td>0</td>
+<td>allmix.Slider@6d00a15d</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.afterMethod()'><b>afterMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.afterMethod()'><b>afterMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.afterMethod()'><b>afterMethod</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.annotation$NewTest.afterMethod()'><b>afterMethod</b><br>Test class: allmix.annotation$NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.annotation$NewTest@6ea12c19</td></tr>
+<tr>
+<td title='allmix.control_group.afterMethod()'><b>afterMethod</b><br>Test class: allmix.control_group</td>
+<td></td>
+<td>0</td>
+<td>allmix.control_group@6a2bcfcb</td></tr>
+<tr>
+<td title='allmix.dilog_box.afterMethod()'><b>afterMethod</b><br>Test class: allmix.dilog_box</td>
+<td></td>
+<td>0</td>
+<td>allmix.dilog_box@7c0e2abd</td></tr>
+<tr>
+<td title='allmix.pagesource.afterMethod()'><b>afterMethod</b><br>Test class: allmix.pagesource</td>
+<td></td>
+<td>0</td>
+<td>allmix.pagesource@3a82f6ef</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.afterMethod()'><b>afterMethod</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.afterMethod()'><b>afterMethod</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.pre1.afterMethod()'><b>afterMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.pre1.afterMethod()'><b>afterMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.pre1.afterMethod()'><b>afterMethod</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.manu_submanu.afterMethod()'><b>afterMethod</b><br>Test class: allmix.manu_submanu</td>
+<td></td>
+<td>0</td>
+<td>allmix.manu_submanu@4439f31e</td></tr>
+<tr>
+<td title='allmix.Amazon.afterClass()'><b>afterClass</b><br>Test class: allmix.Amazon</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon@59e84876</td></tr>
+<tr>
+<td title='allmix.anotaton.afterClass()'><b>afterClass</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.multi_Window_handle.afterClass()'><b>afterClass</b><br>Test class: allmix.multi_Window_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.multi_Window_handle@5dfcfece</td></tr>
+<tr>
+<td title='allmix.selectable.afterClass()'><b>afterClass</b><br>Test class: allmix.selectable</td>
+<td></td>
+<td>0</td>
+<td>allmix.selectable@36d4b5c</td></tr>
+<tr>
+<td title='allmix.Amazon_Multi_Function.afterClass()'><b>afterClass</b><br>Test class: allmix.Amazon_Multi_Function</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon_Multi_Function@5afa04c</td></tr>
+<tr>
+<td title='allmix.ifram_handle.afterClass()'><b>afterClass</b><br>Test class: allmix.ifram_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.ifram_handle@6d78f375</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.afterClass()'><b>afterClass</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.afterClass()'><b>afterClass</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.element_dispalyed_selected_enabled.afterClass()'><b>afterClass</b><br>Test class: allmix.element_dispalyed_selected_enabled</td>
+<td></td>
+<td>0</td>
+<td>allmix.element_dispalyed_selected_enabled@5ae9a829</td></tr>
+<tr>
+<td title='allmix.Popup.afterClass()'><b>afterClass</b><br>Test class: allmix.Popup</td>
+<td></td>
+<td>0</td>
+<td>allmix.Popup@100fc185</td></tr>
+<tr>
+<td title='allmix.spinner.afterClass()'><b>afterClass</b><br>Test class: allmix.spinner</td>
+<td></td>
+<td>0</td>
+<td>allmix.spinner@5034c75a</td></tr>
+<tr>
+<td title='allmix.FB_Register.afterClass()'><b>afterClass</b><br>Test class: allmix.FB_Register</td>
+<td></td>
+<td>0</td>
+<td>allmix.FB_Register@548b7f67</td></tr>
+<tr>
+<td title='allmix.keyboed_evwnt_sample_form.afterClass()'><b>afterClass</b><br>Test class: allmix.keyboed_evwnt_sample_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.keyboed_evwnt_sample_form@32d992b2</td></tr>
+<tr>
+<td title='allmix.pre1.afterClass()'><b>afterClass</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.manage_tab.afterClass()'><b>afterClass</b><br>Test class: allmix.manage_tab</td>
+<td></td>
+<td>0</td>
+<td>allmix.manage_tab@215be6bb</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.afterTest()'><b>afterTest</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='allmix.droppable.DragnDrop()'><b>DragnDrop</b><br>Test class: allmix.droppable</td>
+<td></td>
+<td>0</td>
+<td>allmix.droppable@573f2bb1</td></tr>
+<tr>
+<td title='allmix.keyboed_evwnt_sample_form.Keybord_Action()'><b>Keybord_Action</b><br>Test class: allmix.keyboed_evwnt_sample_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.keyboed_evwnt_sample_form@32d992b2</td></tr>
+<tr>
+<td title='allmix.selectable.Selectable()'><b>Selectable</b><br>Test class: allmix.selectable</td>
+<td></td>
+<td>0</td>
+<td>allmix.selectable@36d4b5c</td></tr>
+<tr>
+<td title='allmix.anotaton.Test1()'><b>Test1</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.anotaton.Test2()'><b>Test2</b><br>Test class: allmix.anotaton</td>
+<td></td>
+<td>0</td>
+<td>allmix.anotaton@6a024a67</td></tr>
+<tr>
+<td title='allmix.switch_windows.TestPopUp()'><b>TestPopUp</b><br>Test class: allmix.switch_windows</td>
+<td></td>
+<td>0</td>
+<td>allmix.switch_windows@396a51ab</td></tr>
+<tr>
+<td title='allmix.mytest.alert()'><b>alert</b><br>Test class: allmix.mytest</td>
+<td></td>
+<td>0</td>
+<td>allmix.mytest@5d5eef3d</td></tr>
+<tr>
+<td title='allmix.checkbox_radio.checkbox()'><b>checkbox</b><br>Test class: allmix.checkbox_radio</td>
+<td></td>
+<td>0</td>
+<td>allmix.checkbox_radio@174d20a</td></tr>
+<tr>
+<td title='allmix.date_picker.dialogbox()'><b>dialogbox</b><br>Test class: allmix.date_picker</td>
+<td></td>
+<td>0</td>
+<td>allmix.date_picker@3c756e4d</td></tr>
+<tr>
+<td title='allmix.control_group.dialogbox()'><b>dialogbox</b><br>Test class: allmix.control_group</td>
+<td></td>
+<td>0</td>
+<td>allmix.control_group@6a2bcfcb</td></tr>
+<tr>
+<td title='allmix.dilog_box.dialogbox()'><b>dialogbox</b><br>Test class: allmix.dilog_box</td>
+<td></td>
+<td>0</td>
+<td>allmix.dilog_box@7c0e2abd</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.double_click()'><b>double_click</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.dropdown_list.dropdownlist()'><b>dropdownlist</b><br>Test class: allmix.dropdown_list</td>
+<td></td>
+<td>0</td>
+<td>allmix.dropdown_list@402f32ff</td></tr>
+<tr>
+<td title='allmix.element_dispalyed_selected_enabled.element_Visibilty()'><b>element_Visibilty</b><br>Test class: allmix.element_dispalyed_selected_enabled</td>
+<td></td>
+<td>0</td>
+<td>allmix.element_dispalyed_selected_enabled@5ae9a829</td></tr>
+<tr>
+<td title='allmix.Amazon.f()'><b>f</b><br>Test class: allmix.Amazon</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon@59e84876</td></tr>
+<tr>
+<td title='allmix.uploadtestNG.f()'><b>f</b><br>Test class: allmix.uploadtestNG</td>
+<td></td>
+<td>0</td>
+<td>allmix.uploadtestNG@9629756</td></tr>
+<tr>
+<td title='allmix.Amazon_Multi_Function.f()'><b>f</b><br>Test class: allmix.Amazon_Multi_Function</td>
+<td></td>
+<td>0</td>
+<td>allmix.Amazon_Multi_Function@5afa04c</td></tr>
+<tr>
+<td title='allmix.annotation$NewTest.f()'><b>f</b><br>Test class: allmix.annotation$NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.annotation$NewTest@6ea12c19</td></tr>
+<tr>
+<td title='allmix.spinner.f()'><b>f</b><br>Test class: allmix.spinner</td>
+<td></td>
+<td>0</td>
+<td>allmix.spinner@5034c75a</td></tr>
+<tr>
+<td title='allmix.FB_Register.f()'><b>f</b><br>Test class: allmix.FB_Register</td>
+<td></td>
+<td>0</td>
+<td>allmix.FB_Register@548b7f67</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.f1()'><b>f1</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.pagesource.f1()'><b>f1</b><br>Test class: allmix.pagesource</td>
+<td></td>
+<td>0</td>
+<td>allmix.pagesource@3a82f6ef</td></tr>
+<tr>
+<td title='allmix.pre1.f1()'><b>f1</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.f2()'><b>f2</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.pre1.f2()'><b>f2</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.TestNG_Anotation_Stucher.f3()'><b>f3</b><br>Test class: allmix.TestNG_Anotation_Stucher</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNG_Anotation_Stucher@7f9a81e8</td></tr>
+<tr>
+<td title='allmix.pre1.f3()'><b>f3</b><br>Test class: allmix.pre1</td>
+<td></td>
+<td>0</td>
+<td>allmix.pre1@643b1d11</td></tr>
+<tr>
+<td title='allmix.Fb_dataprovider.fblogintest()'><b>fblogintest</b><br>Test class: allmix.Fb_dataprovider</td>
+<td><div><pre>org.testng.TestNGException: 
+Method fblogintest requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:202)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:138)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:387)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:462)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1303)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1019)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1108)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1129944640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1129944640'><pre>org.testng.TestNGException: 
+Method fblogintest requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:202)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:138)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:387)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:462)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1303)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1019)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1108)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>allmix.Fb_dataprovider@6d8a00e3</td></tr>
+<tr>
+<td title='allmix.automation_practiceform.fillform()'><b>fillform</b><br>Test class: allmix.automation_practiceform</td>
+<td></td>
+<td>0</td>
+<td>allmix.automation_practiceform@7921b0a2</td></tr>
+<tr>
+<td title='allmix.html_contect_form.html_contect_form1()'><b>html_contect_form1</b><br>Test class: allmix.html_contect_form</td>
+<td></td>
+<td>0</td>
+<td>allmix.html_contect_form@7ac7a4e4</td></tr>
+<tr>
+<td title='allmix.ifram_handle.iframe1()'><b>iframe1</b><br>Test class: allmix.ifram_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.ifram_handle@6d78f375</td></tr>
+<tr>
+<td title='allmix.ifram_handle.iframe2()'><b>iframe2</b><br>Test class: allmix.ifram_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.ifram_handle@6d78f375</td></tr>
+<tr>
+<td title='allmix.Inputstream.inputdata_from_exlel()'><b>inputdata_from_exlel</b><br>Test class: allmix.Inputstream</td>
+<td></td>
+<td>0</td>
+<td>allmix.Inputstream@1810399e</td></tr>
+<tr>
+<td title='allmix.SortablePage.intMove()'><b>intMove</b><br>Test class: allmix.SortablePage<br>Parameters: 0, 2, [Item 2, Item 3, Item 1, Item 4, Item 5, Item 6, Item 7]</td>
+<td></td>
+<td>0</td>
+<td>allmix.SortablePage@51efea79</td></tr>
+<tr>
+<td title='allmix.SortablePage.intMove()'><b>intMove</b><br>Test class: allmix.SortablePage<br>Parameters: 1, 3, [Item 1, Item 3, Item 4, Item 2, Item 5, Item 6, Item 7]</td>
+<td></td>
+<td>0</td>
+<td>allmix.SortablePage@51efea79</td></tr>
+<tr>
+<td title='allmix.NewTest.keybord_event()'><b>keybord_event</b><br>Test class: allmix.NewTest</td>
+<td></td>
+<td>0</td>
+<td>allmix.NewTest@56f4468b</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.method1()'><b>method1</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.priority.method1()'><b>method1</b><br>Test class: allmix.priority</td>
+<td></td>
+<td>0</td>
+<td>allmix.priority@2ef5e5e3</td></tr>
+<tr>
+<td title='allmix.Comwebdemo.method2()'><b>method2</b><br>Test class: allmix.Comwebdemo</td>
+<td></td>
+<td>0</td>
+<td>allmix.Comwebdemo@66d2e7d9</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.method2()'><b>method2</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.priority.method2()'><b>method2</b><br>Test class: allmix.priority</td>
+<td></td>
+<td>0</td>
+<td>allmix.priority@2ef5e5e3</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.method3()'><b>method3</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.priority.method3()'><b>method3</b><br>Test class: allmix.priority</td>
+<td></td>
+<td>0</td>
+<td>allmix.priority@2ef5e5e3</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.method4()'><b>method4</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.ComWebdemo1.method5()'><b>method5</b><br>Test class: allmix.ComWebdemo1</td>
+<td></td>
+<td>0</td>
+<td>allmix.ComWebdemo1@1efbd816</td></tr>
+<tr>
+<td title='allmix.multi_Window_handle.multi_windows_handle()'><b>multi_windows_handle</b><br>Test class: allmix.multi_Window_handle</td>
+<td></td>
+<td>0</td>
+<td>allmix.multi_Window_handle@5dfcfece</td></tr>
+<tr>
+<td title='allmix.OutputStream.outputstream()'><b>outputstream</b><br>Test class: allmix.OutputStream</td>
+<td></td>
+<td>0</td>
+<td>allmix.OutputStream@6cc4c815</td></tr>
+<tr>
+<td title='allmix.inputOutput.outputstream()'><b>outputstream</b><br>Test class: allmix.inputOutput</td>
+<td></td>
+<td>0</td>
+<td>allmix.inputOutput@50c87b21</td></tr>
+<tr>
+<td title='allmix.Popup.popup()'><b>popup</b><br>Test class: allmix.Popup</td>
+<td></td>
+<td>0</td>
+<td>allmix.Popup@100fc185</td></tr>
+<tr>
+<td title='allmix.double_click_and_right_click.right_click()'><b>right_click</b><br>Test class: allmix.double_click_and_right_click</td>
+<td></td>
+<td>0</td>
+<td>allmix.double_click_and_right_click@48eff760</td></tr>
+<tr>
+<td title='allmix.Slider.slider()'><b>slider</b><br>Test class: allmix.Slider</td>
+<td></td>
+<td>0</td>
+<td>allmix.Slider@6d00a15d</td></tr>
+<tr>
+<td title='allmix.manu_submanu.slider()'><b>slider</b><br>Test class: allmix.manu_submanu</td>
+<td></td>
+<td>0</td>
+<td>allmix.manu_submanu@4439f31e</td></tr>
+<tr>
+<td title='allmix.SortablePage.stringMove()'><b>stringMove</b><br>Test class: allmix.SortablePage<br>Parameters: Item 3, Item 4, [Item 1, Item 2, Item 4, Item 3, Item 5, Item 6, Item 7]</td>
+<td></td>
+<td>0</td>
+<td>allmix.SortablePage@51efea79</td></tr>
+<tr>
+<td title='allmix.SortablePage.stringMove()'><b>stringMove</b><br>Test class: allmix.SortablePage<br>Parameters: Item 1, Item 7, [Item 2, Item 3, Item 4, Item 5, Item 6, Item 7, Item 1]</td>
+<td></td>
+<td>0</td>
+<td>allmix.SortablePage@51efea79</td></tr>
+<tr>
+<td title='allmix.manage_tab.tab()'><b>tab</b><br>Test class: allmix.manage_tab</td>
+<td></td>
+<td>0</td>
+<td>allmix.manage_tab@215be6bb</td></tr>
+<tr>
+<td title='allmix.DatePickerSimple.testDAtePicker()'><b>testDAtePicker</b><br>Test class: allmix.DatePickerSimple</td>
+<td></td>
+<td>0</td>
+<td>allmix.DatePickerSimple@4de8b406</td></tr>
+<tr>
+<td title='allmix.TestNGClass1.testDAtePicker()'><b>testDAtePicker</b><br>Test class: allmix.TestNGClass1</td>
+<td></td>
+<td>0</td>
+<td>allmix.TestNGClass1@51081592</td></tr>
+</table><p>
+</body>
+</html>

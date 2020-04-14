@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="testNG.Alert"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="My Test">
+    <test name="automation_practice_windows">
+         <classes>
+             <class name="switch_windows"/>
+            
+          </classes>
+     </test> <!-- Test -->
+     <test name="checkboxradio">
+         <classes>
+             <class name="checkbox_radio"/>
+            
+          </classes>
+     </test> <!-- Test -->
 </suite> <!-- Suite -->

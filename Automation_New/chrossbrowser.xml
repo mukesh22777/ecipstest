@@ -7,22 +7,16 @@
 		<class name="crossbrowser.VarifyTitle" />
 		</classes>
 		
-	</test>
-	<test name="chrometestsuite">
-	<parameter name="Browser" value="chrome" />
-		<classes>
-		<class name="crossbrowser.VarifyTitle" />
-		</classes>
-	</test>
-	
-	<test name="ietestsuite">
-		<parameter name="Browser" value="IE" />
-		<classes>
-		<class name="crossbrowser.VarifyTitle" />
-		</classes>
-		
-	</test>
-	
-	
+	<test name="flipkart">
+	 <classes>
+	   <class name="com.suite1.Flipkart"/>
+	 </classes>
+   </test>
+   
+  <test name="Myntra">
+     <classes>
+       <class name="com.suite2.SnapDeal"/>
+     </classes>
+   </test>
 	
 </suite> <!-- Suite -->

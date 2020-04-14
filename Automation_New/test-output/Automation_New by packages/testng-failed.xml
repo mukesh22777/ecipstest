@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation_New by packages]">
+  <test name="allmix(failed)">
+    <classes>
+      <class name="allmix.droppable">
+        <methods>
+          <include name="DragnDrop"/>
+        </methods>
+      </class> <!-- allmix.droppable -->
+      <class name="allmix.element_dispalyed_selected_enabled">
+        <methods>
+          <include name="element_Visibilty"/>
+        </methods>
+      </class> <!-- allmix.element_dispalyed_selected_enabled -->
+      <class name="allmix.checkbox_radio">
+        <methods>
+          <include name="checkbox"/>
+        </methods>
+      </class> <!-- allmix.checkbox_radio -->
+      <class name="allmix.ifram_handle">
+        <methods>
+          <include name="iframe1"/>
+          <include name="iframe2"/>
+        </methods>
+      </class> <!-- allmix.ifram_handle -->
+      <class name="allmix.selectable">
+        <methods>
+          <include name="Selectable"/>
+        </methods>
+      </class> <!-- allmix.selectable -->
+      <class name="allmix.dropdown_list">
+        <methods>
+          <include name="dropdownlist"/>
+        </methods>
+      </class> <!-- allmix.dropdown_list -->
+      <class name="allmix.control_group">
+        <methods>
+          <include name="dialogbox"/>
+        </methods>
+      </class> <!-- allmix.control_group -->
+      <class name="allmix.Popup">
+        <methods>
+          <include name="popup"/>
+        </methods>
+      </class> <!-- allmix.Popup -->
+      <class name="allmix.Inputstream">
+        <methods>
+          <include name="inputdata_from_exlel"/>
+        </methods>
+      </class> <!-- allmix.Inputstream -->
+      <class name="allmix.double_click_and_right_click">
+        <methods>
+          <include name="double_click"/>
+          <include name="right_click"/>
+        </methods>
+      </class> <!-- allmix.double_click_and_right_click -->
+      <class name="allmix.anotaton">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="Test1"/>
+          <include name="Test2"/>
+        </methods>
+      </class> <!-- allmix.anotaton -->
+      <class name="allmix.Amazon">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.Amazon -->
+      <class name="allmix.keyboed_evwnt_sample_form">
+        <methods>
+          <include name="Keybord_Action"/>
+        </methods>
+      </class> <!-- allmix.keyboed_evwnt_sample_form -->
+      <class name="allmix.switch_windows">
+        <methods>
+          <include name="TestPopUp"/>
+        </methods>
+      </class> <!-- allmix.switch_windows -->
+      <class name="allmix.inputOutput">
+        <methods>
+          <include name="outputstream"/>
+        </methods>
+      </class> <!-- allmix.inputOutput -->
+      <class name="allmix.manage_tab">
+        <methods>
+          <include name="tab"/>
+        </methods>
+      </class> <!-- allmix.manage_tab -->
+      <class name="allmix.Amazon_Multi_Function">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.Amazon_Multi_Function -->
+      <class name="allmix.Slider">
+        <methods>
+          <include name="slider"/>
+        </methods>
+      </class> <!-- allmix.Slider -->
+      <class name="allmix.mytest">
+        <methods>
+          <include name="alert"/>
+        </methods>
+      </class> <!-- allmix.mytest -->
+      <class name="allmix.TestNGClass1">
+        <methods>
+          <include name="testDAtePicker"/>
+        </methods>
+      </class> <!-- allmix.TestNGClass1 -->
+      <class name="allmix.automation_practiceform">
+        <methods>
+          <include name="fillform"/>
+        </methods>
+      </class> <!-- allmix.automation_practiceform -->
+      <class name="allmix.priority">
+        <methods>
+          <include name="method1"/>
+          <include name="method2"/>
+          <include name="method3"/>
+        </methods>
+      </class> <!-- allmix.priority -->
+      <class name="allmix.pagesource">
+        <methods>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- allmix.pagesource -->
+      <class name="allmix.SortablePage">
+        <methods>
+          <include name="intMove"/>
+          <include name="stringMove"/>
+        </methods>
+      </class> <!-- allmix.SortablePage -->
+      <class name="allmix.Fb_dataprovider">
+        <methods>
+          <include name="fblogintest"/>
+        </methods>
+      </class> <!-- allmix.Fb_dataprovider -->
+      <class name="allmix.Comwebdemo">
+        <methods>
+          <include name="method2"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- allmix.Comwebdemo -->
+      <class name="allmix.DatePickerSimple">
+        <methods>
+          <include name="testDAtePicker"/>
+        </methods>
+      </class> <!-- allmix.DatePickerSimple -->
+      <class name="allmix.TestNG_Anotation_Stucher">
+        <methods>
+          <include name="f1"/>
+          <include name="f3"/>
+          <include name="beforeSuite"/>
+          <include name="f2"/>
+        </methods>
+      </class> <!-- allmix.TestNG_Anotation_Stucher -->
+      <class name="allmix.spinner">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.spinner -->
+      <class name="allmix.ComWebdemo1">
+        <methods>
+          <include name="method4"/>
+          <include name="method5"/>
+          <include name="method2"/>
+          <include name="method3"/>
+          <include name="method1"/>
+        </methods>
+      </class> <!-- allmix.ComWebdemo1 -->
+      <class name="allmix.uploadtestNG">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.uploadtestNG -->
+      <class name="allmix.html_contect_form">
+        <methods>
+          <include name="html_contect_form1"/>
+        </methods>
+      </class> <!-- allmix.html_contect_form -->
+      <class name="allmix.OutputStream">
+        <methods>
+          <include name="outputstream"/>
+        </methods>
+      </class> <!-- allmix.OutputStream -->
+      <class name="allmix.FB_Register">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.FB_Register -->
+      <class name="allmix.NewTest">
+        <methods>
+          <include name="keybord_event"/>
+        </methods>
+      </class> <!-- allmix.NewTest -->
+      <class name="allmix.dilog_box">
+        <methods>
+          <include name="dialogbox"/>
+        </methods>
+      </class> <!-- allmix.dilog_box -->
+      <class name="allmix.manu_submanu">
+        <methods>
+          <include name="slider"/>
+        </methods>
+      </class> <!-- allmix.manu_submanu -->
+      <class name="allmix.multi_Window_handle">
+        <methods>
+          <include name="multi_windows_handle"/>
+        </methods>
+      </class> <!-- allmix.multi_Window_handle -->
+      <class name="allmix.annotation$NewTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- allmix.annotation$NewTest -->
+      <class name="allmix.date_picker">
+        <methods>
+          <include name="dialogbox"/>
+        </methods>
+      </class> <!-- allmix.date_picker -->
+      <class name="allmix.pre1">
+        <methods>
+          <include name="f1"/>
+          <include name="f2"/>
+          <include name="f3"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- allmix.pre1 -->
+    </classes>
+  </test> <!-- allmix(failed) -->
+</suite> <!-- Failed suite [Automation_New by packages] -->

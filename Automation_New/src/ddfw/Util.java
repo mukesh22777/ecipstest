@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import org.jxls.reader.ReaderBuilder;
 
-import com.excel.utility.Xls_Reader;
 
+/*
 public class Util {
 Xls_Reader reader;
 	public static ArrayList<Object[]> getdataFromExcel() {
@@ -22,5 +22,5 @@ Xls_Reader reader;
 		String currentReatMethod = reader.getCellData("","",rowCnt);
 		if (currentTestMethod)	
 	}
-}}
+}} */
  // noe complite code plase see video

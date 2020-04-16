@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="allmix.muliti_handle_windows">
+      <class name="milti_winndows_Handle.managemultiwindows">
         <methods>
-          <include name="beforeClass"/>
-          <include name="trarmDown"/>
-          <include name="multiwindowshandle"/>
+          <include name="testPageTitle"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- allmix.muliti_handle_windows -->
+      </class> <!-- milti_winndows_Handle.managemultiwindows -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

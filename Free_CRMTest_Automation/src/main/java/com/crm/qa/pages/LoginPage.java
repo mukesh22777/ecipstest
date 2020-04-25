@@ -17,7 +17,7 @@ public class LoginPage extends TestBase {
 	@FindBy(id = "pass")
 	WebElement password;
 
-	@FindBy(xpath = "//*[@id=\"u_0_4\"]")
+	@FindBy(xpath = "/html/body/div[1]/div[2]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td[3]/label/input")
 	WebElement loginBtn;
 
 	@FindBy(xpath = "//*[@id=\"blueBarDOMInspector\"]/div/div/div/div[1]/h1/a/i")
@@ -40,7 +40,7 @@ public class LoginPage extends TestBase {
 	public HomePage login(String un, String pwd) {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		// loginBtn.click();
+		//loginBtn.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", loginBtn);
 

@@ -11,49 +11,44 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
 public class marketplace extends TestBase {
-	
 
-		private static final boolean True = false;
-		LoginPage loginPage;
-		HomePage homePage;
-		//TestUtil testUtil;
-		marketplace marketplace;
-		//String sheetName = "contacts";
-		
-		public marketplace(){
-				super();
-				
-		}
-		
-		@BeforeMethod
-		public void setUp() throws InterruptedException {
-			
-			initialization();
-			//testUtil = new TestUtil();
-			marketplace = new marketplace();
-			loginPage = new LoginPage();
-			homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-			
-		}
-		
-		@Test(priority=1)
-		public boolean verifymarketplace(){
-			Assert.assertTrue(marketplace.verifymarketplace(), "contacts label is missing on the page");
-			return True;
-			
-		}
-		
-		@Test(priority=2)
-		public void verifyEletronics(){
-			Electronics.
-		}
-		
-		
+	LoginPage loginPage;
+	HomePage homePage;
+	marketplace marketplace;
 
-		@AfterMethod
-		public void tearDown(){
-			driver.quit();
-		}
-		
+	public marketplace() {
+		super();
 
+	}
+
+	@BeforeMethod
+	public void setUp() throws InterruptedException {
+
+		initialization();
+		marketplace = new marketplace();
+		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		Thread.sleep(8000);
+	}
+
+	@Test(priority = 1)
+	public void clickonmarketplaceBtn() {
+
+		marketplace.clickonmarketplaceBtn();
+	}
+	@Test(priority = 2)
+	public void verifyElectronicsLable() {
+
+		marketplace.verifyElectronicsLable();
+	}
+
+	// @Test(priority=2)
+	// public void verifyEletronics(){
+	// Electronics.
+	// }
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
 }

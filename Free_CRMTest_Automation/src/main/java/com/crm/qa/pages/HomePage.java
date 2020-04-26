@@ -44,7 +44,7 @@ public class HomePage extends TestBase {
 		
 		public marketplace clickOnmarketlink(){
 			marketplace.click();
-			return new market();
+			return new marketplace();
 		}
 		
 		public watchpage clickOnwatchlink(){

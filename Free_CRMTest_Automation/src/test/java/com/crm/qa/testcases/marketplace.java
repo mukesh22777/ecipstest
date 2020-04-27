@@ -42,11 +42,6 @@ public class marketplace extends TestBase {
 		marketplace.verifyElectronicsLable();
 	}
 
-	// @Test(priority=2)
-	// public void verifyEletronics(){
-	// Electronics.
-	// }
-
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

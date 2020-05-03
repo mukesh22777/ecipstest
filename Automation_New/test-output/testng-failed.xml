@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jquery.jquery2">
+      <class name="element_in_dispaly_or_not.element_dispalyed_selected_enabled">
         <methods>
+          <include name="element_Visibilty"/>
           <include name="beforeClass"/>
-          <include name="f"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- jquery.jquery2 -->
+      </class> <!-- element_in_dispaly_or_not.element_dispalyed_selected_enabled -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

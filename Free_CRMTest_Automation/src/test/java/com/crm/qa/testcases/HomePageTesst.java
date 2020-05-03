@@ -20,7 +20,7 @@ public class HomePageTesst<marketplacepage> extends TestBase {
 	//TestUtil testUtil;
 	MessengerPage MessengerPage;
 	marketplace marketplacepage;
-	watchpage watch;
+	watchpage watchpage;
 	
 	public HomePageTesst() {
 			super();
@@ -69,7 +69,7 @@ public class HomePageTesst<marketplacepage> extends TestBase {
 	public void verifywatchLinkTest() {
 		//testUtil.switchToFrame();
 		
-		watch = homePage.clickOnwatchlink();
+		watchpage = homePage.clickOnwatchlink();
 	}
 	@AfterMethod
 	public void tearDown() {

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="LAPTOP-0UFO5ORC" name="testNG.getdata" tests="2" failures="0" timestamp="17 Jun 2019 23:20:14 GMT" time="4.643" errors="0">
-  <testcase name="testResponsecode" time="3.855" classname="testNG.getdata"/>
-  <testcase name="tstbody" time="0.721" classname="testNG.getdata"/>
-</testsuite>

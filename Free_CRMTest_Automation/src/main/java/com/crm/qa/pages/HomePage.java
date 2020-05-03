@@ -18,7 +18,7 @@ public class HomePage extends TestBase {
 		WebElement Messenger;
 		
 		@FindBy(xpath = "//*[@id=\"navItem_2392950137\"]/a/div")
-		WebElement watch;
+		WebElement watchpage;
 		
 
 		@FindBy(xpath = "//*[@id=\"navItem_1606854132932955\"]/a/div")
@@ -48,7 +48,7 @@ public class HomePage extends TestBase {
 		}
 		
 		public watchpage clickOnwatchlink(){
-			watch.click();
+			watchpage.click();
 			return new watchpage();
 		}
 		

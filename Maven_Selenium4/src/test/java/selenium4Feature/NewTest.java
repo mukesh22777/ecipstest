@@ -33,7 +33,6 @@ public class NewTest {
 		Thread.sleep(4000);
 		driver.get("https://automationbookstore.dev/");
 		driver.manage().window().maximize();
-	  
   }
 
   @AfterClass

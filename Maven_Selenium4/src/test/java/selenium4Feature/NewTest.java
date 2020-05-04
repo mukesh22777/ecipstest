@@ -22,7 +22,7 @@ public class NewTest {
 		
 		String id=book5.getAttribute("id");
 		System.out.println(id);
-		//Assert.assertEquals("pid5_thumb", id);
+		
 		Assert.assertEquals("pid5_thumb", id);
 		}
   

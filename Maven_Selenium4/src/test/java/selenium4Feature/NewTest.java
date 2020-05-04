@@ -26,7 +26,6 @@ public class NewTest {
 		Assert.assertEquals("pid5_thumb", id);
 		}
   
-  
   @BeforeClass
   public void setUp() throws InterruptedException {
 	  WebDriverManager.chromedriver().setup();
